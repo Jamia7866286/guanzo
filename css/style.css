@@ -107,6 +107,8 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
 
 .carousal-section .carousel-fade .carousel-item > img {
   height: calc(100vh - 72px);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .carousal-section .carousel-fade .carousel-item .carousel-caption {
