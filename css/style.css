@@ -392,6 +392,8 @@ footer .boxes .social-box:not(:last-child) {
   font-size: 14px;
   font-weight: 300;
   resize: none;
+  background: rgba(248, 248, 248, 0.84);
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .leave-message-main form .form-group textarea {
