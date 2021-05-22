@@ -1,0 +1,33 @@
+@media (min-width: 1200px) {
+      .dryer-model-left-main,
+      .dryer-model-right-main {
+            width: calc(100% - 140px);
+            padding: 48px 74px 0 74px;
+      }
+}
+
+@media (min-width: 992px) {
+      .dryer-model-left-main {
+      }
+}
+
+@media (min-width: 768px) {
+      .dryer-model-left-main {
+      }
+}
+
+@media (min-width: 576px) {
+      .dryer-model-left-main {
+      }
+}
+
+@media (max-width: 1280px) {
+      // .product-list{
+      //       .card{
+      //             width: 300px;
+      //       }
+      // }
+}
+
+
+    /*# sourceMappingURL=responsive.css.map */

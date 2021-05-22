@@ -1,0 +1,8 @@
+@media (min-width: 1200px) {
+  .dryer-model-left-main,
+  .dryer-model-right-main {
+    width: calc(100% - 140px);
+    padding: 48px 74px 0 74px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

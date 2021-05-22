@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  color: #000000 !important;
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: normal;
+  letter-spacing: 0.12em;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(3, 11, 15, 0.4) !important;
+}
+
+:-ms-input-placeholder {
+  color: rgba(3, 11, 15, 0.4) !important;
+}
+
+::-ms-input-placeholder {
+  color: rgba(3, 11, 15, 0.4) !important;
+}
+
+::placeholder {
+  color: rgba(3, 11, 15, 0.4) !important;
+}
+
+.heading h3 {
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.heading p {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.custom-primary-btn {
+  border: 1px solid #000;
+  border-radius: 0;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  height: 46px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.custom-primary-btn:hover, .custom-primary-btn:active, .custom-primary-btn:focus {
+  color: #fff;
+  background: #000 !important;
+  border-color: #000 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+header {
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+header nav.navbar {
+  padding: .688rem 0;
+}
+
+header nav .navbar-nav .nav-item .nav-link {
+  color: #000 !important;
+  font-weight: 500;
+  padding: .5rem 12px !important;
+}
+
+header nav .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0 !important;
+}
+
+.carousal-section {
+  padding-top: 72px;
+}
+
+.carousal-section .carousel-fade .carousel-item {
+  opacity: 0;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousal-section .carousel-fade .carousel-item .carousel-caption {
+  position: absolute;
+  left: 7.2%;
+  right: auto;
+  text-align: inherit;
+  top: 28%;
+  bottom: inherit;
+}
+
+.carousal-section .carousel-fade .carousel-item.active,
+.carousal-section .carousel-fade .carousel-item-next.carousel-item-left,
+.carousal-section .carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousal-section .carousel-fade.active.carousel-item-left, .carousal-section .carousel-fade.active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousal-section .carousel-fade .carousel-item-next,
+.carousal-section .carousel-fade .carousel-item-prev,
+.carousal-section .carousel-fade .carousel-item.active,
+.carousal-section .carousel-fade .active.carousel-item-left,
+.carousal-section .carousel-fade .active.carousel-item-prev {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.hair-style {
+  background: #F5F5F5;
+  padding: 160px 0 92px;
+}
+
+.hair-style .heading h3 .text-style-color {
+  color: #CC1D1D;
+}
+
+.hair-style .right-style-hair .custom-primary-btn {
+  padding: .375rem 40px;
+  height: 56px;
+  font-size: 24px;
+}
+
+.dryer-model {
+  position: relative;
+}
+
+.dryer-model .custom-dryer .dryer-model-common.dryer-model-left-main {
+  background: #C3A9EF;
+}
+
+.dryer-model .custom-dryer .dryer-model-common.dryer-model-left-main .dryer-img img {
+  margin-left: -70px;
+  width: 416px;
+}
+
+.dryer-model .custom-dryer .dryer-model-common.dryer-model-right-main {
+  background: #FFDEC5;
+  padding: 0 74px 48px 74px;
+}
+
+.dryer-model .custom-dryer .dryer-model-common.dryer-model-right-main .dryer-img img {
+  margin-left: 120px;
+  width: 416px;
+}
+
+.dryer-model .custom-dryer .dryer-model-common .dryer-model-left-text {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.dryer-model .take-ur-pick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dryer-model .take-professional {
+  background: rgba(255, 255, 255, 0.4);
+  width: 444px;
+  padding: 20px 0;
+}
+
+.dryer-model .take-professional p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.dryer-model .take-professional h5 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.dryer-model .take-pick-text {
+  margin: 24px 0 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.haircare-product .hair-product-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #D90000;
+  margin-bottom: 12px;
+}
+
+.haircare-product .heading h3 {
+  width: 300px;
+}
+
+.haircare-product .heading p {
+  margin-bottom: 84px;
+}
+
+.haircare-product .explore-text {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.haircare-product .redirect {
+  width: 368px;
+}
+
+.haircare-product .redirect .down-arrow {
+  height: 48px;
+  width: 48px;
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: #000;
+  text-decoration: none;
+}
+
+.haircare-product .redirect span {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 26px;
+  font-weight: 600;
+  margin: 3px 0 0 4px;
+}
+
+.product-list {
+  background: #F5F5F5;
+  padding-bottom: 62px;
+}
+
+.product-list .card {
+  width: 310px;
+  border: 0;
+  background: #F5F5F5;
+  text-align: center;
+  margin: 0 auto 42px;
+}
+
+.product-list .card .card-body {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.product-list .card img {
+  border-radius: 0;
+}
+
+.product-list .card .card-title {
+  color: #CC1D1D;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.product-list .card .card-text {
+  color: #030B0F;
+}
+
+footer {
+  background: #F5F5F5;
+  padding-bottom: 48px;
+  position: relative;
+}
+
+footer:after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 1px;
+  background: #C4C4C4;
+  left: 15px;
+}
+
+footer .contact-us {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+footer .footer-inner {
+  padding-bottom: 56px;
+}
+
+footer .footer-left .footer-left-inner .call-us {
+  color: #030B0F;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+footer .footer-left .email-main {
+  margin-bottom: 40px;
+}
+
+footer .footer-left .email-main .email-text {
+  color: #030B0F;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
+footer .footer-left .email-main .email-text:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+footer .boxes {
+  margin-top: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .boxes .social-box {
+  height: 48px;
+  width: 48px;
+  background: #C4C4C4;
+}
+
+footer .boxes .social-box:not(:last-child) {
+  margin-right: 38px;
+}
+
+.leave-message-main {
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+  padding-left: 26px;
+}
+
+.leave-message-main .leave-message {
+  font-size: 24px;
+  font-weight: 500;
+  color: #030B0F;
+  margin-bottom: 28px;
+}
+
+.leave-message-main form .form-group {
+  margin-bottom: 24px;
+}
+
+.leave-message-main form .form-group label {
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+
+.leave-message-main form .form-group input, .leave-message-main form .form-group textarea {
+  border-radius: 0;
+  letter-spacing: 0.06em;
+  font-size: 14px;
+  font-weight: 300;
+  resize: none;
+}
+
+.leave-message-main form .form-group textarea {
+  height: 106px;
+}
+
+.leave-message-main form .form-group .custom-primary-btn {
+  margin-top: 8px;
+  height: 46px;
+  width: 148px;
+}
+/*# sourceMappingURL=style.css.map */
