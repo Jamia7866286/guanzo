@@ -109,6 +109,10 @@ header{
                   transition-duration: 0.8s;
                   transition-property: opacity;
 
+                  > img{
+                        height: calc(100vh - 72px);
+                  }
+
                   .carousel-caption {
                         position: absolute;
                         left: 7.2%;
@@ -405,6 +409,11 @@ footer{
                         resize: none;
                         background: rgba(248, 248, 248, 0.84);
                         border: 1px solid rgba(0, 0, 0, 0.4);
+
+                        &:focus{
+                              border-color: #0052cc;
+                              box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
+                        }
                   }
                   textarea{
                         height: 106px;
