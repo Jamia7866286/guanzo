@@ -158,6 +158,27 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   position: relative;
 }
 
+.dryer-model .custom-dryer .dryer-model-common {
+  position: relative;
+  z-index: 9;
+}
+
+.dryer-model .custom-dryer .dryer-model-common:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.dryer-model .custom-dryer .dryer-model-common:hover:before {
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .dryer-model .custom-dryer .dryer-model-common.dryer-model-left-main {
   background: #C3A9EF;
 }
@@ -165,11 +186,13 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
 .dryer-model .custom-dryer .dryer-model-common.dryer-model-left-main .dryer-img img {
   margin-left: -70px;
   width: 416px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .dryer-model .custom-dryer .dryer-model-common.dryer-model-right-main {
   background: #FFDEC5;
-  padding: 0 74px 48px 74px;
+  padding: 48px 74px;
 }
 
 .dryer-model .custom-dryer .dryer-model-common.dryer-model-right-main .dryer-img img {
@@ -190,6 +213,7 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 999;
 }
 
 .dryer-model .take-professional {

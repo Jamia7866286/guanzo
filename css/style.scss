@@ -177,6 +177,25 @@ header{
       .custom-dryer{
             
             .dryer-model-common{
+                  position: relative;
+                  z-index: 9;
+
+                  &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        background: rgba(0,0,0,0);
+                        transition: 0.4s ease-in-out;
+                        height: 100%;
+                        width: 100%;
+                  }
+
+                  &:hover{
+                        &:before{
+                              background: rgba(0,0,0,0.7);
+                        }
+                  }
 
                   &.dryer-model-left-main{
                         background: #C3A9EF;
@@ -185,12 +204,13 @@ header{
                               img{
                                     margin-left: -70px;
                                     width: 416px;
+                                    transform: scaleX(-1);
                               }
                         }
                   }
                   &.dryer-model-right-main{
                         background: #FFDEC5;
-                        padding: 0 74px 48px 74px;
+                        padding: 48px 74px;
 
                         .dryer-img{
                               img{
@@ -215,6 +235,7 @@ header{
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+            z-index: 999;
         }
 
         .take-professional {
