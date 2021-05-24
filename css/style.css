@@ -169,7 +169,7 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   position: absolute;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.15);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   height: 100%;
@@ -177,7 +177,7 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
 }
 
 .dryer-model .custom-dryer .dryer-model-common:hover:before {
-  background: rgba(0, 0, 0, 0.15);
+  background: none;
 }
 
 .dryer-model .custom-dryer .dryer-model-common:hover .dryer-img img {
