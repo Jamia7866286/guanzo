@@ -111,6 +111,11 @@ header{
 
                   > img{
                         height: calc(100vh - 72px);
+
+                        @media(min-width: 1440px) and (max-width: 1600px){
+                              // width: 1440px !important;
+                              height: 828px !important;
+                        }
                         // object-fit: cover;
                   }
 

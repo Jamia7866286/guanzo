@@ -109,6 +109,12 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   height: calc(100vh - 72px);
 }
 
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .carousal-section .carousel-fade .carousel-item > img {
+    height: 828px !important;
+  }
+}
+
 .carousal-section .carousel-fade .carousel-item .carousel-caption {
   position: absolute;
   left: 7.2%;
