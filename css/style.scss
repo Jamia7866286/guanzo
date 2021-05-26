@@ -71,8 +71,20 @@ body {
 }
 
 header{
-      background: #fff;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+
+      &.custom-sticky{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            transition: 0.5s ease-in-out;
+
+            &.fixed-menu{
+                  background: rgba(255,255,255,1);
+                  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+            }
+      }
 
       nav{
             &.navbar{
@@ -102,7 +114,7 @@ header{
 
 // Carousal css
 .carousal-section{
-      padding-top: 72px;
+      // padding-top: 72px;
       .carousel-fade  {
             .carousel-item{
                   opacity: 0;
@@ -212,13 +224,8 @@ header{
 
                         .dryer-img{
 
-                              .rotate-img-dryer{
-                                    -webkit-transform: translateX(-70px) scaleX(-1);
-                                    transform: translateX(-133px) scaleX(-1);
-                              }
-
                               img{
-                                    // margin-left: -70px;
+                                    margin-left: -50px;
                                     width: 416px;
                                     // transform: scaleX(-1);
                                     transition: 0.3s;
@@ -275,7 +282,7 @@ header{
 
         .take-professional {
             background: rgba(255, 255, 255, 0.4);
-            width: 444px;
+            width: 430px;
             padding: 20px 0;
 
             p{
