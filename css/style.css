@@ -105,16 +105,6 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   transition-property: opacity;
 }
 
-.carousal-section .carousel-fade .carousel-item > img {
-  height: calc(100vh - 72px);
-}
-
-@media (min-width: 1440px) and (max-width: 1600px) {
-  .carousal-section .carousel-fade .carousel-item > img {
-    height: 828px !important;
-  }
-}
-
 .carousal-section .carousel-fade .carousel-item .carousel-caption {
   position: absolute;
   left: 7.2%;
@@ -175,7 +165,7 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   position: absolute;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   height: 100%;
@@ -195,11 +185,23 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   background: #C3A9EF;
 }
 
+.dryer-model .custom-dryer .dryer-model-common.dryer-model-left-main .dryer-img .rotate-img-dryer {
+  -webkit-transform: translateX(-70px) scaleX(-1);
+  transform: translateX(-133px) scaleX(-1);
+}
+
 .dryer-model .custom-dryer .dryer-model-common.dryer-model-left-main .dryer-img img {
-  margin-left: -70px;
   width: 416px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.dryer-model .custom-dryer .dryer-model-common.dryer-model-left-main:hover + .dryer-model-right-main:before {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.dryer-model .custom-dryer .dryer-model-common.dryer-model-left-main.active:before {
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .dryer-model .custom-dryer .dryer-model-common.dryer-model-right-main {
@@ -228,6 +230,7 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
           transform: translate(-50%, -50%);
   text-align: center;
   z-index: 999;
+  pointer-events: none;
 }
 
 .dryer-model .take-professional {

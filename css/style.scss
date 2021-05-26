@@ -110,11 +110,11 @@ header{
                   transition-property: opacity;
 
                   > img{
-                        height: calc(100vh - 72px);
+                        // height: calc(100vh - 72px);
 
-                        @media(min-width: 1440px) and (max-width: 1600px){
-                              height: 828px !important;
-                        }
+                        // @media(min-width: 1440px) and (max-width: 1600px){
+                        //       height: 828px !important;
+                        // }
                   }
 
                   .carousel-caption {
@@ -190,7 +190,7 @@ header{
                         position: absolute;
                         left: 0;
                         top: 0;
-                        background: rgba(0,0,0,0.15);
+                        background: rgba(0,0,0,0);
                         transition: 0.4s ease-in-out;
                         height: 100%;
                         width: 100%;
@@ -211,14 +211,35 @@ header{
                         background: #C3A9EF;
 
                         .dryer-img{
+
+                              .rotate-img-dryer{
+                                    -webkit-transform: translateX(-70px) scaleX(-1);
+                                    transform: translateX(-133px) scaleX(-1);
+                              }
+
                               img{
-                                    margin-left: -70px;
+                                    // margin-left: -70px;
                                     width: 416px;
                                     // transform: scaleX(-1);
                                     transition: 0.3s;
                                     // margin-top: 20px;
                               }
                         }
+
+                        &:hover{
+                              + .dryer-model-right-main{
+                                    &:before {
+                                          background: rgba(0,0,0,0.15);
+                                    }
+                              }
+                        }
+
+                        &.active{
+                              &:before {
+                                    background: rgba(0,0,0,0.15);
+                              }
+                        }
+
                   }
                   &.dryer-model-right-main{
                         background: #FFDEC5;
@@ -249,6 +270,7 @@ header{
             transform: translate(-50%, -50%);
             text-align: center;
             z-index: 999;
+            pointer-events: none;
         }
 
         .take-professional {
