@@ -1,9 +1,16 @@
 $(document).ready(function(){
 
+
       // home page carousal
-      $('.carousel.home-page-carousal').carousel({
-            interval: 3000
-      });
+      $('.carousel.home-page-carousal').hover(
+            function () { 
+                  $(this).carousel('pause');
+            },
+            function () { 
+                  $(this).carousel('cycle'); 
+            }
+      );
+
       
 
       // home page class add on hover dryer section
@@ -12,6 +19,7 @@ $(document).ready(function(){
       }, function(){
             $('.dryer-model-left-main').removeClass('active');
       });  
+
 
 
       // custom sticky navbar with fixed on scroll
@@ -26,5 +34,8 @@ $(document).ready(function(){
             }
 
       });
+      
+
+
 });
 
