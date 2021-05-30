@@ -17,6 +17,10 @@
       text-decoration: none;
 }
     
+html{
+      scroll-behavior: smooth;
+}
+
 body {
       background: #fff;
       color: #000000 !important;
@@ -78,11 +82,15 @@ header{
             left: 0;
             width: 100%;
             z-index: 9999;
-            transition: 0.5s ease-in-out;
+            transition: 0.4s ease-in-out;
 
             &.fixed-menu{
                   background: rgba(255,255,255,1);
                   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+            }
+
+            &:hover{
+                  background: #fff;
             }
       }
 
@@ -114,45 +122,63 @@ header{
 
 // Carousal css
 .carousal-section{
-      // padding-top: 72px;
-      .carousel-fade  {
-            .carousel-item{
-                  opacity: 0;
-                  transition-duration: 0.8s;
-                  transition-property: opacity;
+      
 
-                  .carousel-caption {
-                        position: absolute;
-                        left: 7.2%;
-                        right: auto;
-                        text-align: inherit;
-                        top: 28%;
-                        bottom: inherit;
-                  }
+      .carousal-icon-custom{
+            width: 50px;
+            height: 50px;
+            background: rgba(0,0,0,0.3);
+            top: 50%;
+            left: 100px;
+            opacity: 0.8;
+            border-radius: 50%;
+
+            &.carousel-control-next{
+                  left: auto;
+                  right: 100px;
             }
-
-            .carousel-item.active,
-            .carousel-item-next.carousel-item-left,
-            .carousel-item-prev.carousel-item-right {
-                  opacity: 1;
-            }
-
-            &.active {
-                  &.carousel-item-left,
-                  &.carousel-item-right{
-                        opacity: 0;
-                  }
-            }
-
-            .carousel-item-next,
-            .carousel-item-prev,
-            .carousel-item.active,
-            .active.carousel-item-left,
-            .active.carousel-item-prev {
-                  transform: translateX(0);
-                  transform: translate3d(0, 0, 0);
-           }
       }
+
+      // Carousal fade-in-out css
+      // .carousel-fade  {
+      //       .carousel-item{
+      //             opacity: 0;
+      //             transition-duration: 0.8s;
+      //             transition-property: opacity;
+
+      //             .carousel-caption {
+      //                   position: absolute;
+      //                   left: 7.2%;
+      //                   right: auto;
+      //                   text-align: inherit;
+      //                   top: 28%;
+      //                   bottom: inherit;
+      //             }
+      //       }
+
+      
+      //       .carousel-item.active,
+      //       .carousel-item-next.carousel-item-left,
+      //       .carousel-item-prev.carousel-item-right {
+      //             opacity: 1;
+      //       }
+
+      //       &.active {
+      //             &.carousel-item-left,
+      //             &.carousel-item-right{
+      //                   opacity: 0;
+      //             }
+      //       }
+
+      //       .carousel-item-next,
+      //       .carousel-item-prev,
+      //       .carousel-item.active,
+      //       .active.carousel-item-left,
+      //       .active.carousel-item-prev {
+      //             transform: translateX(0);
+      //             transform: translate3d(0, 0, 0);
+      //      }
+      // }
 }
 
 
@@ -330,6 +356,12 @@ header{
                   margin: 0 auto;
                   color: #000;
                   text-decoration: none;
+                  transition: 0.2s ease-in-out;
+
+                  &:hover{
+                        background: #000;
+                        color: #fff;
+                  }
             }
             span{
                   transform: rotate(90deg);
@@ -345,7 +377,7 @@ header{
       padding-bottom: 62px;
 
       .card{
-            width: 310px;
+            // width: 310px;
             border: 0;
             background: #F5F5F5;
             text-align: center;
@@ -469,6 +501,7 @@ footer{
                         &:focus{
                               border-color: #0052cc;
                               box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
+                              background: #fff;
                         }
                   }
                   textarea{

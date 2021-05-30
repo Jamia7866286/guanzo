@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
   color: #000000 !important;
@@ -79,14 +83,18 @@ header.custom-sticky {
   left: 0;
   width: 100%;
   z-index: 9999;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 header.custom-sticky.fixed-menu {
   background: white;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+header.custom-sticky:hover {
+  background: #fff;
 }
 
 header nav.navbar {
@@ -103,42 +111,19 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   padding-right: 0 !important;
 }
 
-.carousal-section .carousel-fade .carousel-item {
-  opacity: 0;
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+.carousal-section .carousal-icon-custom {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  top: 50%;
+  left: 100px;
+  opacity: 0.8;
+  border-radius: 50%;
 }
 
-.carousal-section .carousel-fade .carousel-item .carousel-caption {
-  position: absolute;
-  left: 7.2%;
-  right: auto;
-  text-align: inherit;
-  top: 28%;
-  bottom: inherit;
-}
-
-.carousal-section .carousel-fade .carousel-item.active,
-.carousal-section .carousel-fade .carousel-item-next.carousel-item-left,
-.carousal-section .carousel-fade .carousel-item-prev.carousel-item-right {
-  opacity: 1;
-}
-
-.carousal-section .carousel-fade.active.carousel-item-left, .carousal-section .carousel-fade.active.carousel-item-right {
-  opacity: 0;
-}
-
-.carousal-section .carousel-fade .carousel-item-next,
-.carousal-section .carousel-fade .carousel-item-prev,
-.carousal-section .carousel-fade .carousel-item.active,
-.carousal-section .carousel-fade .active.carousel-item-left,
-.carousal-section .carousel-fade .active.carousel-item-prev {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+.carousal-section .carousal-icon-custom.carousel-control-next {
+  left: auto;
+  right: 100px;
 }
 
 .hair-style {
@@ -301,6 +286,13 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   margin: 0 auto;
   color: #000;
   text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.haircare-product .redirect .down-arrow:hover {
+  background: #000;
+  color: #fff;
 }
 
 .haircare-product .redirect span {
@@ -317,7 +309,6 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
 }
 
 .product-list .card {
-  width: 310px;
   border: 0;
   background: #F5F5F5;
   text-align: center;
@@ -446,6 +437,7 @@ footer .boxes .social-box:not(:last-child) {
   border-color: #0052cc;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
           box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
+  background: #fff;
 }
 
 .leave-message-main form .form-group textarea {
