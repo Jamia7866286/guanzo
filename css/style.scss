@@ -371,7 +371,6 @@ header{
       }
 }
 
-
 .product-list{
       background: #F5F5F5;
       padding-bottom: 62px;
@@ -407,6 +406,51 @@ header{
       }
 }
 
+.leave-message-main{
+      border-left: 2px solid rgba(0,0,0,0.3);
+      padding-left: 26px;
+
+      .leave-message{
+            @include font-style(24px, 500);
+            color: #030B0F;
+            margin-bottom: 28px;
+      }
+      form{
+            .form-group{
+                  margin-bottom: 24px;
+
+                  label{
+                        font-size: 18px;
+                        letter-spacing: 0.06em;
+                        margin-bottom: 2px;
+                  }   
+
+                  input, textarea{
+                        border-radius: 0;
+                        letter-spacing: 0.06em;
+                        @include font-style(14px, 300);
+                        resize: none;
+                        background: rgba(248, 248, 248, 0.84);
+                        border: 1px solid rgba(0, 0, 0, 0.4);
+
+                        &:focus{
+                              border-color: #0052cc;
+                              box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
+                              background: #fff;
+                        }
+                  }
+                  textarea{
+                        height: 106px;
+                  }
+
+                  .custom-primary-btn{
+                        margin-top: 8px;
+                        height: 46px;
+                        width: 148px;
+                  }
+            }
+      }
+}
 
 footer{
       background: #F5F5F5;
@@ -471,47 +515,100 @@ footer{
       }
 }
 
-.leave-message-main{
-      border-left: 2px solid rgba(0,0,0,0.3);
-      padding-left: 26px;
 
-      .leave-message{
-            @include font-style(24px, 500);
-            color: #030B0F;
-            margin-bottom: 28px;
-      }
-      form{
-            .form-group{
-                  margin-bottom: 24px;
+// Product details page css
+.product-banner{
+      background: #fff url(../img/guanzo-intelligent-beauty-2.jpg);
+      height: 300px;
+      width: 100%;
+      background-size: 100%;
 
-                  label{
-                        font-size: 18px;
-                        letter-spacing: 0.06em;
-                        margin-bottom: 2px;
-                  }   
+      // .heading{
+      //       position: absolute;
+      //       top: 100px;
+      // }
+      
+}
 
-                  input, textarea{
-                        border-radius: 0;
-                        letter-spacing: 0.06em;
-                        @include font-style(14px, 300);
-                        resize: none;
-                        background: rgba(248, 248, 248, 0.84);
-                        border: 1px solid rgba(0, 0, 0, 0.4);
+.details-page-carousal{
+      background-color: #F5F5F5;
 
-                        &:focus{
-                              border-color: #0052cc;
-                              box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
-                              background: #fff;
+      .details-carousel-space{
+            padding: 100px 0;
+
+            .heading{
+                  width: 488px;
+
+                  h3{
+                        @include font-style(32px, 700);
+                        border-bottom: 1px solid #111111;
+                        padding-bottom: 12px;
+
+                        span{
+                              color: #D90000;
                         }
                   }
-                  textarea{
-                        height: 106px;
+                  p{
+                        font-size: 14px;
                   }
+            }
+      }
 
-                  .custom-primary-btn{
-                        margin-top: 8px;
-                        height: 46px;
-                        width: 148px;
+      .variants-main{
+            .variant-heading{
+                  @include font-style(18px, 600);
+                  color: #030B0F;
+                  letter-spacing: 0.06em;
+                  margin-bottom: 24px;
+            }
+
+            .variants-box-main{
+                  .boxes{
+                        text-align: center;
+
+                        &:not(:last-child){
+                              margin-right: 44px;
+                        }
+
+                        .box {
+                              height: 48px;
+                              width: 48px;
+                              border-radius: 50%;
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+
+                              &.red{
+                                    background: #D33838;
+                                    border: 5px solid #D33838;
+                              }
+
+                              &.black{
+                                    background: #030B0F;
+                                    border: 5px solid #030B0F;
+                              }
+
+                              &.gold{
+                                    background: #EACE3A;
+                                    border: 5px solid #EACE3A;
+                              }
+                          }
+
+                          &:hover{
+                              .box{
+                                    box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.17);
+                              }
+                          }
+                          &.active{
+                              .box{
+                                    box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.17);
+                              }
+                          }
+
+                          .box-text {
+                              margin-top: 8px;
+                              letter-spacing: 0.06em;
+                              color: #030B0F;
+                          }
                   }
             }
       }

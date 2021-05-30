@@ -338,6 +338,55 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   color: #030B0F;
 }
 
+.leave-message-main {
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+  padding-left: 26px;
+}
+
+.leave-message-main .leave-message {
+  font-size: 24px;
+  font-weight: 500;
+  color: #030B0F;
+  margin-bottom: 28px;
+}
+
+.leave-message-main form .form-group {
+  margin-bottom: 24px;
+}
+
+.leave-message-main form .form-group label {
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+
+.leave-message-main form .form-group input, .leave-message-main form .form-group textarea {
+  border-radius: 0;
+  letter-spacing: 0.06em;
+  font-size: 14px;
+  font-weight: 300;
+  resize: none;
+  background: rgba(248, 248, 248, 0.84);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.leave-message-main form .form-group input:focus, .leave-message-main form .form-group textarea:focus {
+  border-color: #0052cc;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
+          box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
+  background: #fff;
+}
+
+.leave-message-main form .form-group textarea {
+  height: 106px;
+}
+
+.leave-message-main form .form-group .custom-primary-btn {
+  margin-top: 8px;
+  height: 46px;
+  width: 148px;
+}
+
 footer {
   background: #F5F5F5;
   padding-bottom: 48px;
@@ -401,52 +450,93 @@ footer .boxes .social-box:not(:last-child) {
   margin-right: 38px;
 }
 
-.leave-message-main {
-  border-left: 2px solid rgba(0, 0, 0, 0.3);
-  padding-left: 26px;
+.product-banner {
+  background: #fff url(../img/guanzo-intelligent-beauty-2.jpg);
+  height: 300px;
+  width: 100%;
+  background-size: 100%;
 }
 
-.leave-message-main .leave-message {
-  font-size: 24px;
-  font-weight: 500;
+.details-page-carousal {
+  background-color: #F5F5F5;
+}
+
+.details-page-carousal .details-carousel-space {
+  padding: 100px 0;
+}
+
+.details-page-carousal .details-carousel-space .heading {
+  width: 488px;
+}
+
+.details-page-carousal .details-carousel-space .heading h3 {
+  font-size: 32px;
+  font-weight: 700;
+  border-bottom: 1px solid #111111;
+  padding-bottom: 12px;
+}
+
+.details-page-carousal .details-carousel-space .heading h3 span {
+  color: #D90000;
+}
+
+.details-page-carousal .details-carousel-space .heading p {
+  font-size: 14px;
+}
+
+.details-page-carousal .variants-main .variant-heading {
+  font-size: 18px;
+  font-weight: 600;
   color: #030B0F;
-  margin-bottom: 28px;
-}
-
-.leave-message-main form .form-group {
+  letter-spacing: 0.06em;
   margin-bottom: 24px;
 }
 
-.leave-message-main form .form-group label {
-  font-size: 18px;
-  letter-spacing: 0.06em;
-  margin-bottom: 2px;
+.details-page-carousal .variants-main .variants-box-main .boxes {
+  text-align: center;
 }
 
-.leave-message-main form .form-group input, .leave-message-main form .form-group textarea {
-  border-radius: 0;
-  letter-spacing: 0.06em;
-  font-size: 14px;
-  font-weight: 300;
-  resize: none;
-  background: rgba(248, 248, 248, 0.84);
-  border: 1px solid rgba(0, 0, 0, 0.4);
+.details-page-carousal .variants-main .variants-box-main .boxes:not(:last-child) {
+  margin-right: 44px;
 }
 
-.leave-message-main form .form-group input:focus, .leave-message-main form .form-group textarea:focus {
-  border-color: #0052cc;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
-          box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15);
-  background: #fff;
+.details-page-carousal .variants-main .variants-box-main .boxes .box {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.leave-message-main form .form-group textarea {
-  height: 106px;
+.details-page-carousal .variants-main .variants-box-main .boxes .box.red {
+  background: #D33838;
+  border: 5px solid #D33838;
 }
 
-.leave-message-main form .form-group .custom-primary-btn {
+.details-page-carousal .variants-main .variants-box-main .boxes .box.black {
+  background: #030B0F;
+  border: 5px solid #030B0F;
+}
+
+.details-page-carousal .variants-main .variants-box-main .boxes .box.gold {
+  background: #EACE3A;
+  border: 5px solid #EACE3A;
+}
+
+.details-page-carousal .variants-main .variants-box-main .boxes:hover .box {
+  -webkit-box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.17);
+          box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.17);
+}
+
+.details-page-carousal .variants-main .variants-box-main .boxes.active .box {
+  -webkit-box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.17);
+          box-shadow: 0 0px 6px 2px rgba(0, 0, 0, 0.17);
+}
+
+.details-page-carousal .variants-main .variants-box-main .boxes .box-text {
   margin-top: 8px;
-  height: 46px;
-  width: 148px;
+  letter-spacing: 0.06em;
+  color: #030B0F;
 }
 /*# sourceMappingURL=style.css.map */

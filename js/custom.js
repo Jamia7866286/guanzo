@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
       // home page carousal
-      $('.carousel.home-page-carousal').hover(
+      $('#carouselHomePage.home-page-carousal').hover(
             function () { 
                   $(this).carousel('pause');
             },
