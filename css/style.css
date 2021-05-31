@@ -48,7 +48,7 @@ body {
   margin-bottom: 32px;
 }
 
-.custom-primary-btn {
+.custom-outline-light {
   border: 1px solid #000;
   border-radius: 0;
   color: #000;
@@ -69,7 +69,7 @@ body {
           justify-content: center;
 }
 
-.custom-primary-btn:hover, .custom-primary-btn:active, .custom-primary-btn:focus {
+.custom-outline-light:hover, .custom-outline-light:active, .custom-outline-light:focus {
   color: #fff;
   background: #000 !important;
   border-color: #000 !important;
@@ -135,7 +135,7 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   color: #CC1D1D;
 }
 
-.hair-style .right-style-hair .custom-primary-btn {
+.hair-style .right-style-hair .custom-outline-light {
   padding: .375rem 40px;
   height: 56px;
   font-size: 24px;
@@ -381,7 +381,7 @@ header nav .navbar-nav .nav-item:last-child .nav-link {
   height: 106px;
 }
 
-.leave-message-main form .form-group .custom-primary-btn {
+.leave-message-main form .form-group .custom-outline-light {
   margin-top: 8px;
   height: 46px;
   width: 148px;
@@ -461,27 +461,8 @@ footer .boxes .social-box:not(:last-child) {
   background-color: #F5F5F5;
 }
 
-.details-page-carousal .details-carousel-space {
-  padding: 100px 0;
-}
-
-.details-page-carousal .details-carousel-space .heading {
-  width: 488px;
-}
-
-.details-page-carousal .details-carousel-space .heading h3 {
-  font-size: 32px;
-  font-weight: 700;
-  border-bottom: 1px solid #111111;
-  padding-bottom: 12px;
-}
-
-.details-page-carousal .details-carousel-space .heading h3 span {
-  color: #D90000;
-}
-
-.details-page-carousal .details-carousel-space .heading p {
-  font-size: 14px;
+.details-page-carousal .details-carousal-inner .carousel-item img {
+  height: 460px;
 }
 
 .details-page-carousal .variants-main .variant-heading {
@@ -538,5 +519,129 @@ footer .boxes .social-box:not(:last-child) {
   margin-top: 8px;
   letter-spacing: 0.06em;
   color: #030B0F;
+}
+
+.details-page-carousal .variants-main .custom-outline-light {
+  height: 48px;
+  width: 250px;
+  margin-top: 32px;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+}
+
+.details-page-carousal .details-carousel-space {
+  padding: 100px 0;
+}
+
+.details-page-carousal .details-carousel-space .heading {
+  width: 488px;
+}
+
+.details-page-carousal .details-carousel-space .heading h3 {
+  font-size: 32px;
+  font-weight: 700;
+  border-bottom: 1px solid #111111;
+  padding-bottom: 12px;
+}
+
+.details-page-carousal .details-carousel-space .heading h3 span {
+  color: #D90000;
+}
+
+.details-page-carousal .details-carousel-space .heading p {
+  font-size: 14px;
+}
+
+.details-page-carousal .how-use-heading {
+  padding-bottom: 68px;
+}
+
+.details-page-carousal .how-use-heading .heading h3 {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.details-page-carousal .how-use-heading .common-border-right {
+  border-radius: 1px;
+  border-right: 1px solid rgba(17, 17, 17, 0.5);
+}
+
+.details-page-carousal .how-use-heading .media img {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  margin-right: 16px;
+}
+
+.details-page-carousal .benifits-section .heading.ingredient {
+  margin-top: 56px;
+}
+
+.details-page-carousal .benifits-section .heading.ingredient p {
+  font-size: 14px;
+}
+
+.details-page-carousal .benifits-section ul li {
+  position: relative;
+  padding-left: 32px;
+}
+
+.details-page-carousal .benifits-section ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.details-page-carousal .benifits-section ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background: #C4C4C4;
+  border-radius: 50%;
+}
+
+.details-page-carousal .benifits-section .packing-order-main {
+  margin-top: 56px;
+}
+
+.details-page-carousal .benifits-section .packing-order-main ul {
+  margin-bottom: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.details-page-carousal .benifits-section .packing-order-main ul li {
+  padding-left: 0;
+}
+
+.details-page-carousal .benifits-section .packing-order-main ul li::before {
+  display: none;
+}
+
+.details-page-carousal .benifits-section .benifits-right-img img {
+  height: 580px;
+  width: 100%;
+  background: #fff;
+}
+
+.product-details-footer {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.product-details-footer .heading {
+  color: #fff;
+}
+
+.product-details-footer .heading h3 {
+  font-size: 48px;
+  margin-bottom: 4px;
+}
+
+.product-details-footer .heading p {
+  font-size: 18px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

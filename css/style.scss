@@ -53,7 +53,7 @@ body {
 
 
 // custom css
-.custom-primary-btn{
+.custom-outline-light{
       border: 1px solid #000;
       border-radius: 0;
       color: #000;
@@ -195,7 +195,7 @@ header{
       }
 
       .right-style-hair{
-            .custom-primary-btn{
+            .custom-outline-light{
                   padding: .375rem 40px;
                   height: 56px;
                   font-size: 24px;
@@ -443,7 +443,7 @@ header{
                         height: 106px;
                   }
 
-                  .custom-primary-btn{
+                  .custom-outline-light{
                         margin-top: 8px;
                         height: 46px;
                         width: 148px;
@@ -533,28 +533,16 @@ footer{
 .details-page-carousal{
       background-color: #F5F5F5;
 
-      .details-carousel-space{
-            padding: 100px 0;
-
-            .heading{
-                  width: 488px;
-
-                  h3{
-                        @include font-style(32px, 700);
-                        border-bottom: 1px solid #111111;
-                        padding-bottom: 12px;
-
-                        span{
-                              color: #D90000;
-                        }
-                  }
-                  p{
-                        font-size: 14px;
+      .details-carousal-inner{
+            .carousel-item{
+                  img{
+                        height: 460px;
                   }
             }
       }
 
       .variants-main{
+
             .variant-heading{
                   @include font-style(18px, 600);
                   color: #030B0F;
@@ -610,6 +598,152 @@ footer{
                               color: #030B0F;
                           }
                   }
+
+                 
+            }
+
+            .custom-outline-light{
+                  height: 48px;
+                  width: 250px;
+                  margin-top: 32px;
+                  font-size: 18px;
+                  letter-spacing: 0.12em;
+            }
+
+      }
+
+      .details-carousel-space{
+            padding: 100px 0;
+
+            .heading{
+                  width: 488px;
+
+                  h3{
+                        @include font-style(32px, 700);
+                        border-bottom: 1px solid #111111;
+                        padding-bottom: 12px;
+
+                        span{
+                              color: #D90000;
+                        }
+                  }
+                  p{
+                        font-size: 14px;
+                  }
+            }
+      }
+
+      .how-use-heading{
+            padding-bottom: 68px;
+
+            .heading{
+                  h3{
+                        font-size: 28px;
+                        margin-bottom: 32px;
+                  }
+            }
+
+            .common-border-right{
+                  border-radius: 1px;
+                  border-right: 1px solid rgba(17,17,17,0.5);
+            }
+
+            .media{
+                  img{
+                        height: 72px;
+                        width: 72px;
+                        border-radius: 50%;
+                        background: #C4C4C4;
+                        margin-right: 16px;
+                  }
+
+                  // .media-body{
+                  //       p{}
+                  // }
+            }
+      }
+
+      .benifits-section{
+
+            .heading{
+                  // h3{
+                  //       margin-bottom: 32px;
+                  // }
+
+                  &.ingredient{
+                        margin-top: 56px;
+
+                        p{
+                              font-size: 14px;
+                        }
+                  }
+            }
+
+            ul{
+                  li{
+                        position: relative;
+                        padding-left: 32px;
+
+                        &:not(:last-child){
+                              margin-bottom: 20px;
+                        }
+
+                        &::before{
+                              content: "";
+                              position: absolute;
+                              top: 50%;
+                              transform: translateY(-50%);
+                              left: 0;
+                              height: 16px;
+                              width: 16px;
+                              background: #C4C4C4;
+                              border-radius: 50%;
+                        }
+                  }
+            }
+
+            .packing-order-main{
+                  margin-top: 56px;
+
+                  ul{
+                        margin-bottom: 0;
+                        border-right: 1px solid rgba(0,0,0,0.5);
+                        li{
+                              padding-left: 0;
+
+                              &::before{
+                                    display: none;
+                              }
+                        }
+                  }
+            }
+
+            .benifits-right-img{
+                  img{
+                        height: 580px;
+                        width: 100%;
+                        background: #fff;
+                  }
+            }
+      }
+
+}
+
+
+.product-details-footer{
+      // background: url(../img/refreshing-&-strong.jpg);
+      background: rgba(0,0,0,0.5);
+
+      .heading{
+            color: #fff;
+            // text-align: center;
+
+            h3{
+                  font-size: 48px;
+                  margin-bottom: 4px;
+            }
+            p{
+                  @include font-style(18px, 700);
             }
       }
 }
