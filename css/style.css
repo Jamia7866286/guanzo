@@ -131,6 +131,10 @@ header nav.navbar {
   padding: .688rem 0;
 }
 
+header nav .navbar-nav .nav-item {
+  position: static;
+}
+
 header nav .navbar-nav .nav-item .nav-link {
   color: #000 !important;
   font-weight: 500;
@@ -160,9 +164,10 @@ header nav .navbar-nav .nav-item.dropdown .dropdown-menu {
   display: block;
   opacity: 0;
   visibility: hidden;
-  width: 100vw;
-  -webkit-transform: translateX(-70vw);
-          transform: translateX(-70vw);
+  top: 44px;
+  position: fixed;
+  left: 0;
+  width: 100%;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
   border: 0;
@@ -170,6 +175,8 @@ header nav .navbar-nav .nav-item.dropdown .dropdown-menu {
   transition: 0.2s ease-in-out;
   -webkit-animation: hoverMenu 0.2s forwards;
           animation: hoverMenu 0.2s forwards;
+  border-radius: 0;
+  padding-top: 30px;
 }
 
 .right-menu-item {
