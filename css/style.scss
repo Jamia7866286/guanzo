@@ -74,6 +74,28 @@ body {
       }
 }
 
+.custom-btn-dark{
+      border: 1px solid #000;
+      background: #000;
+      border-radius: 0;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      box-shadow: none;
+      outline: none;
+      height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover, &:active, &:focus{
+            color: #000;
+            background: #fff !important;
+            border-color: #000 !important;
+            box-shadow: none !important;
+      }
+}
+
 header{
 
       &.custom-sticky{
@@ -105,7 +127,16 @@ header{
                               color: #000 !important;
                               font-weight: 500;
                               padding: .5rem 12px !important;
+                              transition: 0.3s ease-in-out;
 
+                              &:hover{
+                                    // font-weight: 700;
+                                    color: #CC1D1D !important;
+                              }
+
+                              &::after{
+                                    display: none;
+                              }
                               
                         }
 
@@ -114,12 +145,65 @@ header{
                                     padding-right: 0 !important;
                               }
                         }
+
+                        &:hover{
+                              .dropdown-menu{
+                                    display: block;
+                              }
+                        }
+
+                        &.dropdown{
+                              .dropdown-menu{
+                                    width: 100vw;
+                                    transform: translateX(-70vw);
+                                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+                                    border: 0;
+
+                                    @at-root{
+                                          .right-menu-item{
+                                                flex: auto;
+                                                margin-left: 15%;
+                                                width: 55%;
+
+                                                .menu-inner-items{
+                                                      width: 50%;
+                                                      margin-top: 40px;
+                                                }
+
+                                                .product-details-name{
+                                                      @include font-style(24px, 600);
+                                                      margin-bottom: 16px;
+                                                }
+
+                                                ul{
+                                                      li{
+                                                            &.nav-item{
+                                                                  a.nav-link{
+                                                                        padding: 0.5rem 0 !important;
+                                                                        font-size: 14px;
+                                                                        letter-spacing: 0.06em;
+                                                                  }
+                                                            }
+                                                            &:last-child{
+                                                                  &.nav-item{
+                                                                        a.nav-link{
+                                                                              padding-bottom: 0 !important;
+                                                                        }
+                                                                  }
+                                                            }
+                                                      }
+                                                }
+                                          }
+                                    }
+                              }
+                        }
                   }
 
             }
       }
 }
 
+  
 // Carousal css
 .carousal-section{
       

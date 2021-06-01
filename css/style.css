@@ -77,6 +77,36 @@ body {
           box-shadow: none !important;
 }
 
+.custom-btn-dark {
+  border: 1px solid #000;
+  background: #000;
+  border-radius: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  height: 46px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.custom-btn-dark:hover, .custom-btn-dark:active, .custom-btn-dark:focus {
+  color: #000;
+  background: #fff !important;
+  border-color: #000 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 header.custom-sticky {
   position: fixed;
   top: 0;
@@ -105,10 +135,62 @@ header nav .navbar-nav .nav-item .nav-link {
   color: #000 !important;
   font-weight: 500;
   padding: .5rem 12px !important;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header nav .navbar-nav .nav-item .nav-link:hover {
+  color: #CC1D1D !important;
+}
+
+header nav .navbar-nav .nav-item .nav-link::after {
+  display: none;
 }
 
 header nav .navbar-nav .nav-item:last-child .nav-link {
   padding-right: 0 !important;
+}
+
+header nav .navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+header nav .navbar-nav .nav-item.dropdown .dropdown-menu {
+  width: 100vw;
+  -webkit-transform: translateX(-70vw);
+          transform: translateX(-70vw);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border: 0;
+}
+
+.right-menu-item {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin-left: 15%;
+  width: 55%;
+}
+
+.right-menu-item .menu-inner-items {
+  width: 50%;
+  margin-top: 40px;
+}
+
+.right-menu-item .product-details-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.right-menu-item ul li.nav-item a.nav-link {
+  padding: 0.5rem 0 !important;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+
+.right-menu-item ul li:last-child.nav-item a.nav-link {
+  padding-bottom: 0 !important;
 }
 
 .carousal-section .carousal-icon-custom {
