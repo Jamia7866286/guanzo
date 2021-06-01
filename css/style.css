@@ -719,6 +719,7 @@ footer .boxes .social-box:not(:last-child) {
 
 .product-details-footer {
   background: rgba(0, 0, 0, 0.5);
+  padding: 100px 0;
 }
 
 .product-details-footer .heading {
@@ -733,5 +734,10 @@ footer .boxes .social-box:not(:last-child) {
 .product-details-footer .heading p {
   font-size: 18px;
   font-weight: 700;
+}
+
+.product-details-footer .request-sample-details-footer .custom-btn-dark {
+  height: 56px;
+  width: 308px;
 }
 /*# sourceMappingURL=style.css.map */
