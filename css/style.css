@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -548,10 +549,29 @@ footer .boxes .social-box:not(:last-child) {
 }
 
 .product-banner {
-  background: #fff url(../img/guanzo-intelligent-beauty-2.jpg);
+  background: #C4C4C4;
   height: 300px;
   width: 100%;
   background-size: 100%;
+  position: relative;
+}
+
+.product-banner.about {
+  height: 550px;
+}
+
+.product-banner.about .heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 760px;
+}
+
+.product-banner.about .heading p {
+  font-size: 32px;
+  margin: 20px 0 0;
 }
 
 .details-page-carousal {
@@ -746,5 +766,150 @@ footer .boxes .social-box:not(:last-child) {
 .product-details-footer .request-sample-details-footer .custom-btn-dark {
   height: 56px;
   width: 308px;
+}
+
+.fast-delivery-time {
+  padding: 60px 0;
+}
+
+.fast-delivery-time ul li.media:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+.fast-delivery-time ul li.media img {
+  height: 240px;
+  width: 240px;
+  margin-right: 54px;
+}
+
+.fast-delivery-time ul li.media .media-body h5 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.cosmetics {
+  padding: 100px 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.54)), to(rgba(255, 255, 255, 0.54))), url(../img/cosmetics.png);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.54), rgba(255, 255, 255, 0.54)), url(../img/cosmetics.png);
+}
+
+.cosmetics .heading h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.cosmetics .heading p {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.cosmetics .brand-portfolio {
+  margin-bottom: 40px;
+}
+
+.cosmetics .brand-portfolio .portfolio-text {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cosmetics .brand-portfolio .brand-logo.mx-5 {
+  margin: 0 40px;
+}
+
+.cosmetics .brand-portfolio .brand-logo img {
+  width: 244px;
+  height: 104px;
+}
+
+.cosmetics .portfolio-descriptions p {
+  font-size: 24px;
+}
+
+.address-behind {
+  padding: 100px 0;
+  background: #F5F5F5;
+}
+
+.address-behind .box {
+  width: 404px;
+  height: 404px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(46.35deg, #FF7776 -7.53%, #FFDA7B 106.31%);
+}
+
+.address-behind .box .child-box {
+  background: #fff;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  left: 32px;
+  top: 32px;
+}
+
+.address-behind .heading {
+  padding-left: 24px;
+}
+
+.address-behind .heading h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.address-behind .heading p {
+  font-size: 24px;
+}
+
+.address-behind .address-content {
+  margin-top: 64px;
+  background: linear-gradient(0deg, #FFF1B1, #FFF1B1), linear-gradient(46.35deg, #FFC3C3 -7.53%, #FFE976 106.31%);
+  padding: 40px 56px;
+}
+
+.address-behind .address-content .cosmetic-text-font {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #CC1D1D;
+  font-family: 'Tangerine', cursive;
+  line-height: 53px;
+}
+
+.address-behind .main-address {
+  color: #404040;
+}
+
+.address-behind .main-address h5 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.address-behind .main-address small {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.get-in-touch {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 100px 0;
+}
+
+.get-in-touch .heading {
+  color: #fff;
+}
+
+.get-in-touch .heading h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.get-in-touch .request-sample-details-footer .custom-btn-dark {
+  height: 56px;
+  width: 258px;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */

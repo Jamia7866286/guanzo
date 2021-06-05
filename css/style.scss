@@ -1,7 +1,7 @@
 
 // Font import with cdn
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
 @mixin font-style($font-size, $font-weight){
       font-size: $font-size;
@@ -618,15 +618,35 @@ footer{
 
 // Product details page css
 .product-banner{
-      background: #fff url(../img/guanzo-intelligent-beauty-2.jpg);
+      // url(../img/guanzo-intelligent-beauty-2.jpg)
+      background: #C4C4C4;
       height: 300px;
       width: 100%;
       background-size: 100%;
+      position: relative;
 
       // .heading{
       //       position: absolute;
       //       top: 100px;
       // }
+
+
+      &.about{
+            height: 550px;
+
+            .heading{
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%,-50%);
+                  width: 760px;
+
+                  p{
+                        font-size: 32px;
+                        margin: 20px 0 0;
+                  }
+            }     
+      }
       
 }
 
@@ -856,3 +876,155 @@ footer{
       }
 }
 
+
+
+// About page css
+.fast-delivery-time{
+      padding: 60px 0;
+
+      ul{
+            li{
+                  &.media{
+
+                        &:not(:last-child){
+                              margin-bottom: 72px;
+                        }
+
+                        img{
+                              height: 240px;
+                              width: 240px;
+                              margin-right: 54px;
+                        }
+                       
+                        .media-body{
+                              h5{
+                                    @include font-style(28px, 700);
+                                    margin-bottom: 0;
+                              }
+                        }     
+                  }
+            }
+      }
+}
+
+.cosmetics{
+      padding: 100px 0;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.54), rgba(255, 255, 255, 0.54)), url(../img/cosmetics.png);
+
+      .heading{
+            h3{
+                  @include font-style(48px, 700);
+                  margin-bottom: 24px;
+            }
+            p{
+                  @include font-style(28px, 600);
+                  margin-bottom: 40px;
+            }
+      }
+
+      .brand-portfolio{
+
+            margin-bottom: 40px;
+
+            .portfolio-text{
+                  @include font-style(28px, 700);
+            }
+
+            .brand-logo{
+                  &.mx-5{
+                        margin: 0 40px;
+                  }
+                  img{
+                        width: 244px;
+                        height: 104px;
+                  }
+            }
+      }
+
+      .portfolio-descriptions{
+            p{
+                  font-size: 24px;
+            }
+      }
+}
+
+.address-behind{
+      padding: 100px 0;
+      background: #F5F5F5;
+
+      .box{
+            width: 404px;
+            height: 404px;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(46.35deg, #FF7776 -7.53%, #FFDA7B 106.31%);
+
+            .child-box{
+                  background: #fff;
+                  height: 400px;
+                  width: 400px;
+                  position: relative;
+                  left: 32px;
+                  top: 32px;
+            }
+      }
+
+      .heading{
+            padding-left: 24px;
+
+            h3{
+                  @include font-style(28px, 700);
+                  margin-bottom: 32px;
+            }
+            p{
+                  font-size: 24px;
+            }
+      }
+
+      .address-content{
+            margin-top: 64px;
+            background: linear-gradient(0deg, #FFF1B1, #FFF1B1), linear-gradient(46.35deg, #FFC3C3 -7.53%, #FFE976 106.31%);
+            padding: 40px 56px;
+
+            .cosmetic-text-font{
+                  @include font-style(48px, 700);
+                  margin-bottom: 32px;
+                  color: #CC1D1D;
+                  font-family: 'Tangerine', cursive;
+                  line-height: 53px;
+            }
+      }
+
+      .main-address{
+            color: #404040;
+            h5{
+                  @include font-style(24px, 700);
+                  margin-bottom: 8px;
+            }
+            small{
+                  font-size: 20px;
+                  font-weight: 500;
+            }
+      }
+}
+
+
+.get-in-touch {
+      background: rgba(0,0,0,0.5);
+      padding: 100px 0;
+
+      .heading{
+            color: #fff;
+
+            h3{
+                  @include font-style(28px, 700);
+                  margin-bottom: 24px;
+            }
+      }
+
+      .request-sample-details-footer{
+            .custom-btn-dark{
+                  height: 56px;
+                  width: 258px;
+                  font-size: 24px;
+            }
+      }
+}
