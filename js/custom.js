@@ -34,8 +34,10 @@ $(document).ready(function(){
             }
 
       });
-      
 
+
+      // AOS animated js fade-in-out initialize custom js
+      AOS.init();
 
 });
 

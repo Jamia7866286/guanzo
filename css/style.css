@@ -227,6 +227,7 @@ header nav .navbar-nav .nav-item.dropdown .dropdown-menu {
 .hair-style {
   background: #F5F5F5;
   padding: 100px 0;
+  overflow: hidden;
 }
 
 .hair-style .heading h3 .text-style-color {
@@ -648,10 +649,6 @@ footer .boxes .social-box:not(:last-child) {
 
 .details-page-carousal .details-carousel-space {
   padding: 100px 0;
-}
-
-.details-page-carousal .details-carousel-space .heading {
-  width: 488px;
 }
 
 .details-page-carousal .details-carousel-space .heading h3 {
